@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+
+.digital {
+    color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 22px;
+}
+
+.digital span {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.digital p {
+    color: #aaa;
+}
+
+.digital p span {
+    color: #aaa;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.analog {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background: url(clock.png);
+    border-radius: 50%;
+    box-shadow: 0 0 15px #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analog::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 111;
+}
+
+.analog .hr,
+.analog .minu,
+.analog .secn {
+    position: absolute;
+}
+
+.analog .hr,
+.hour {
+    width: 150px;
+    height: 150px;
+}
+
+.analog .minu,
+.mins {
+    width: 210px;
+    height: 210px;
+}
+
+.analog .secn,
+.secon {
+    width: 260px;
+    height: 260px;
+}
+
+.hour,
+.mins,
+.secon {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hour::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 8px;
+    border-radius: 10px 10px;
+    z-index: 1;
+    background-color: rgb(238, 34, 68);
+}
+
+.mins::before {
+    content: '';
+    position: absolute;
+    height: 110px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: rgb(196, 196, 196);
+    z-index: 2;
+}
+
+.secon::before {
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 3px;
+    border-radius: 2px;
+    background-color: rgb(110, 110, 110);
+    z-index: 3;
+}
+
+.mode {
+    padding: 10px 22px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: 1px solid rgb(80, 68, 0);
+    background-color: transparent;
+    outline: none;
+}
+
+.mode:active {
+    box-shadow: 0 0 5px rgb(204, 173, 0);
+}
+
+.mode.active {
+    border: 1px solid #bbb;
+    filter: invert(100%);
+}
+
+.body.active .hour::before {
+    filter: invert(100%) !important;
+}
+
+.mode.active:active {
+    box-shadow: 0 0 5px #888;
+}
+
+.mode .night,
+.mode.active .day {
+    display: none;
+}
+
+.mode .day,
+.mode.active .night {
+    display: block;
+}
+
+.body.active {
+    filter: invert(100%);
+    background-color: #ddd;
+}

@@ -1,0 +1,92 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: antiquewhite;
+}
+body{
+    background: linear-gradient(315deg,rgb(72, 21, 168)  14%,rgb(173, 37, 167));
+    background-color: rgb(226, 198, 43);
+    min-height: 100vh;
+    width: 100%;
+}
+p{
+    height: 100vh;
+}
+header{
+    width: 90%;
+    margin-bottom: 50px;
+    position: relative;
+    margin-top: 2%;
+    left:5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ham{
+    font-size: 60px;
+}
+.logo{
+    font-size: 50px;
+}
+.navlnks ul{
+    list-style: none;
+    width: 100%;
+}
+.navlnks a{
+    text-decoration: none;
+    padding: 10px 0px;
+    display: block;
+    width: 100%;
+    transition: all 0.2s ease;
+    color: #666;
+}
+.navlnks a:hover,
+.navlnks a.active,
+.hamc.active i,
+.hamc:hover i{
+    color: #fef4ea;
+    text-shadow: 2px 2px 25px rgba(245, 245, 245, 0.363),
+    -2px -2px 25px rgba(245, 245, 245, 0.363);
+}
+.navlnks li{
+    margin: 10px 0px;
+}
+.hamc{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+.hamc i{
+    font-size: 60px;
+    color: #999;
+    transition: all 0.2s ease;
+}
+.navlnks{
+    background-color: rgba(0, 0, 0, 0.904);
+    height: 0vh;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    overflow: hidden;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.navlnks.active{
+    height: 100vh;
+}

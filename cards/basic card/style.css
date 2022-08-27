@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36204e;
+    background: linear-gradient(315deg, #141b29,#6b2a5f 74%);
+}
+.container{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card{
+    margin: 70px 50px;
+    width: 270px;
+    height: 400px;
+    background: url(/images/pexels-suliman-sallehi-1576939.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+}
+.content{
+    width: 290px;
+    height: 250px;
+    position: relative;
+    opacity: 0;
+    bottom: -45%;
+    transition: 0.3s;
+    right: -10px;
+    padding: 15px 40px;
+    border-radius: 15px 0px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(219, 136, 41);
+}
+.content .hed{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+.content .con{
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.content .more{
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #400350;
+    border: 1px solid #fff;
+    padding: 8px 18px;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.content .more:hover{
+    color: #fff;
+    background-color: #400350;
+    border:1px solid #400350;
+}
+.card:hover .content{
+    bottom: -50%;
+    right: 10px;
+    opacity: 1;
+}

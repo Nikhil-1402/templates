@@ -1,0 +1,65 @@
+.carousel {
+    position: absolute;
+    top: 25%;
+    width: 90%;
+    margin: auto;
+}
+
+.carousel-cell {
+    /* margin-top: 20px; */
+    opacity: 0.8;
+    width: 300px;
+    height: 150px;
+    margin: 0 20px;
+    padding: 0 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-cell .comment {
+    display: block;
+    position: absolute;
+    width: 400px;
+    top: 0px;
+}
+
+.carousel-cell img {
+    width: 100px;
+    height: 100px;
+}
+
+.ncc h5 {
+    width: 100%;
+    text-align: center;
+}
+
+.ncc h5 a {
+    font-weight: 600;
+    margin-right: 30px;
+    color: #fff;
+}
+
+.ncc p {
+    color: #aaa;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.carousel-cell.is-selected {
+    background: #eee;
+    opacity: 1;
+}
+
+.carousel-cell.is-selected h5 a {
+    color: #000;
+}
+
+.carousel-cell.is-selected p {
+    color: #444;
+}
+
+.flickity-page-dots {
+    display: none;
+}

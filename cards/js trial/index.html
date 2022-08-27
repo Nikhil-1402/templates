@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js trial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="hed">Card</h1>
+            <a href="#" class="read"><span>Read More</span><i class="bi bi-caret-up-fill"></i></a>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis esse dolor itaque saepe
+                    eaque? Repellendus ipsa ad, ea neque possimus asperiores error pariatur, vel, exercitationem saepe
+                    amet? Quod, necessitatibus!</p>
+                <a href="#" class="collapse"><span>Collapse</span><i
+                        class="bi bi-caret-down-fill"></i></a>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="hed">Card</h1>
+            <a href="#" class="read"><span>Read More</span><i class="bi bi-caret-up-fill"></i></a>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis esse dolor itaque saepe
+                    eaque? Repellendus ipsa ad, ea neque possimus asperiores error pariatur, vel, exercitationem saepe
+                    amet? Quod, necessitatibus!</p>
+                <a href="#" class="collapse"><span>Collapse</span><i
+                        class="bi bi-caret-down-fill"></i></a>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="hed">Card</h1>
+            <a href="#" class="read"><span>Read More</span><i class="bi bi-caret-up-fill"></i></a>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis esse dolor itaque saepe
+                    eaque? Repellendus ipsa ad, ea neque possimus asperiores error pariatur, vel, exercitationem saepe
+                    amet? Quod, necessitatibus!</p>
+                <a href="#" class="collapse"><span>Collapse</span><i
+                        class="bi bi-caret-down-fill"></i></a>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="hed">Card</h1>
+            <a href="#" class="read"><span>Read More</span><i class="bi bi-caret-up-fill"></i></a>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis esse dolor itaque saepe
+                    eaque? Repellendus ipsa ad, ea neque possimus asperiores error pariatur, vel, exercitationem saepe
+                    amet? Quod, necessitatibus!</p>
+                <a href="#" class="collapse"><span>Collapse</span><i
+                        class="bi bi-caret-down-fill"></i></a>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="hed">Card</h1>
+            <a href="#" class="read"><span>Read More</span><i class="bi bi-caret-up-fill"></i></a>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis esse dolor itaque saepe
+                    eaque? Repellendus ipsa ad, ea neque possimus asperiores error pariatur, vel, exercitationem saepe
+                    amet? Quod, necessitatibus!</p>
+                <a href="#" class="collapse"><span>Collapse</span><i
+                        class="bi bi-caret-down-fill"></i></a>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="hed">Card</h1>
+            <a href="#" class="read"><span>Read More</span><i class="bi bi-caret-up-fill"></i></a>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis esse dolor itaque saepe
+                    eaque? Repellendus ipsa ad, ea neque possimus asperiores error pariatur, vel, exercitationem saepe
+                    amet? Quod, necessitatibus!</p>
+                <a href="#" class="collapse"><span>Collapse</span><i
+                        class="bi bi-caret-down-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    let c = document.querySelectorAll('.collapse');
+    let co = document.querySelectorAll('.content');
+    let l = document.querySelectorAll('.read');
+    for (let i = 0; i < l.length; i++) {
+        l[i].onclick = function () {
+            let j = 0;
+            while (j < l.length) {
+                l[j++].className = 'read';
+            }
+            co[i].className = 'content active';
+            l[i].className = 'read active';
+            c[i].className = 'collapse';
+        }
+    }
+
+    for (let i = 0; i < c.length; i++) {
+        c[i].onclick = function () {
+            let j = 0;
+            while (j < c.length) {
+                c[j++].className = 'collapse';
+            }
+            co[i].className = 'content';
+            c[i].className = 'collapse active';
+            l[i].className = 'read' ;
+        }
+    }
+</script>
+
+</html>

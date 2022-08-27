@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<button class="mode" id="mode" onclick="toggle()">
+    <img src="sun1.png" alt="" class="day">
+    <img src="moon1.png" alt="" class="night">
+</button>
+
+<body class="body" id="body">
+
+    <div class="container">
+        <div class="analog">
+            <div class="hr">
+                <div class="hour" id="hour"></div>
+            </div>
+            <div class="minu">
+                <div class="mins" id="mins"></div>
+            </div>
+            <div class="secn">
+                <div class="secon" id="secon"></div>
+            </div>
+        </div>
+        <div class="digital">
+            <span id="hh"></span> :
+            <span id="min"></span> :
+            <span id="sec"></span>
+            <span id="merid"></span>
+            <p>
+                <span id="day"></span>
+                <span id="dd"></span>
+                <span id="mm"></span>,
+                <span id="yr"></span>
+            </p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

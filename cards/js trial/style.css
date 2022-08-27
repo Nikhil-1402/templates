@@ -1,0 +1,91 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.container .card{
+    margin: 50px;
+    min-width: 280px;
+    width: 300px;
+    height: 450px;
+    background: url(/ima/pexels-gijs-coolen-2880476.jpg);
+    background-color: blueviolet;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+}
+.card .hed{
+    padding: 15px;
+    text-align: center;
+}
+.card .read{
+    padding: 10px 18px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+    text-decoration: none;
+    position: relative;
+    top: 300px;
+    transition: all 0.3s;
+    margin: 15px;
+}
+.card .read span,
+.card .collapse span{
+    margin-right: 5px;
+}
+.card .read:hover,
+.card .collapse:hover,
+.card .read.active,
+.card .collapse.active{
+    background-color: rgb(101, 20, 177);
+    border: 1px solid rgb(101, 20, 177);
+    color: #fff;
+}
+.content{
+    width: 340px;
+    min-width: 280px;
+    padding: 30px;
+    position: relative;
+    right: 150px;
+    top: 140px;
+    display: none;
+    transition:all 0.5s ease;
+    border-radius: 40px 0px;
+    background-color: rgb(253, 128, 45);
+}
+.content.active{
+    right: 20px;
+    display: block;
+}
+.content p{
+    margin-bottom: 25px;
+    color: #fff;
+}
+.content .collapse{
+    padding: 10px 18px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.3s;
+    margin-top: 15px;
+}

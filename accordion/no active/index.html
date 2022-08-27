@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion No active</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sec">
+            <button class="btn">
+                <span class="fr"> Heading 1</span>
+                <div class="pm">
+                    <i class="bi bi-plus open"></i>
+                    <i class="bi bi-dash close"></i>
+                </div>
+            </button>
+            <div class="con">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima consequatur maxime doloremque,
+                    dolorum fuga eveniet voluptas debitis reprehenderit quas ut ab exercitationem perspiciatis
+                    praesentium doloribus quo iste! Nulla, quia mollitia?</p>
+            </div>
+        </div>
+        <div class="sec">
+            <button class="btn">
+                <span class="fr"> Heading 1</span>
+                <div class="pm">
+                    <i class="bi bi-plus open"></i>
+                    <i class="bi bi-dash close"></i>
+                </div>
+            </button>
+            <div class="con">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima consequatur maxime doloremque,
+                    dolorum fuga eveniet voluptas debitis reprehenderit quas ut ab exercitationem perspiciatis
+                    praesentium doloribus quo iste! Nulla, quia mollitia?</p>
+            </div>
+        </div>
+        <div class="sec">
+            <button class="btn">
+                <span class="fr"> Heading 1</span>
+                <div class="pm">
+                    <i class="bi bi-plus open"></i>
+                    <i class="bi bi-dash close"></i>
+                </div>
+            </button>
+            <div class="con">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima consequatur maxime doloremque,
+                    dolorum fuga eveniet voluptas debitis reprehenderit quas ut ab exercitationem perspiciatis
+                    praesentium doloribus quo iste! Nulla, quia mollitia?</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    let a = document.querySelectorAll('.btn');
+    let b = document.querySelectorAll('.pm');
+    let c = document.querySelectorAll('.con');
+
+    for (let i = 0; i < a.length; i++) {
+        a[i].onclick = function () {
+            a[i].classList.toggle('active');
+            b[i].classList.toggle('active');
+            c[i].classList.toggle('active');
+        }
+    }
+</script>
+
+</html>
